@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".NewStartupActivity1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/entre_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="New Startup"
+        android:textColor="#75B8C8"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Fill the following information to create your new startup"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entre_text" />
+
+    <TextView
+        android:id="@+id/txt_startName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:textSize="16sp"
+        android:text="Enter your startup Or company name"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    <EditText
+        android:id="@+id/startupName"
+        android:layout_width="345dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/rectangular_rounded_textbox"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@id/txt_startName"/>
+
+        <TextView
+            android:id="@+id/txt_startCatogery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:textSize="16sp"
+            android:text="Select the category of your startup"
+            app:layout_constraintStart_toStartOf="@+id/startupName"
+            app:layout_constraintTop_toBottomOf="@+id/startupName" />
+
+    <Spinner
+        android:id="@+id/startup_category_parent_spinner"
+        android:layout_width="345dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintStart_toStartOf="@+id/txt_startCatogery"
+        app:layout_constraintTop_toBottomOf="@+id/txt_startCatogery" />
+
+    <TextView
+        android:id="@+id/txt_startup_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:textSize="16sp"
+        android:text="Problem statement of your startup in few lines."
+        app:layout_constraintStart_toStartOf="@+id/startup_category_parent_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/startup_category_parent_spinner" />
+
+
+    <EditText
+        android:id="@+id/startupBio"
+        android:layout_width="345dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textAlignment="viewStart"
+        android:gravity="start"
+        android:background="@drawable/rectangular_rounded_textbox"
+        app:layout_constraintStart_toStartOf="@+id/txt_startup_bio"
+        app:layout_constraintTop_toBottomOf="@id/txt_startup_bio"/>
+
+
+    <TextView
+        android:id="@+id/txt_startDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:textSize="16sp"
+        android:text="When were your startup created"
+        app:layout_constraintStart_toStartOf="@+id/startupBio"
+        app:layout_constraintTop_toBottomOf="@+id/startupBio" />
+
+
+    <EditText
+        android:id="@+id/startupDate"
+        android:layout_width="345dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/rectangular_rounded_textbox"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/txt_startDate"
+        app:layout_constraintTop_toBottomOf="@id/txt_startDate"/>
+
+        <TextView
+            android:id="@+id/txt_startPartners"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            android:text="Add your co-founders or partners and their positions"
+            app:layout_constraintStart_toStartOf="@+id/startupDate"
+            app:layout_constraintTop_toBottomOf="@+id/startupDate" />
+
+
+        <Button
+            android:id="@+id/btnAddStartupPartners"
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="ADD"
+            android:background="@drawable/rectangular_rounded_textbox"
+            app:layout_constraintEnd_toEndOf="@+id/txt_startPartners"
+            app:layout_constraintStart_toStartOf="@+id/txt_startPartners"
+            app:layout_constraintTop_toBottomOf="@id/txt_startPartners"/>
+
+
+        <TextView
+            android:id="@+id/txt_startLinks"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:text="Add website links Or Social Media accounts of your startup if any."
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="55dp"
+            app:layout_constraintStart_toStartOf="@+id/txt_startPartners"
+            app:layout_constraintTop_toBottomOf="@+id/btnAddStartupPartners"/>
+
+
+        <Button
+            android:id="@+id/btnAddStartupLinks"
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="ADD"
+            android:background="@drawable/rectangular_rounded_textbox"
+            app:layout_constraintEnd_toEndOf="@+id/txt_startPartners"
+            app:layout_constraintStart_toStartOf="@+id/txt_startLinks"
+            app:layout_constraintTop_toBottomOf="@id/txt_startLinks"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_passious"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:text="Passious"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#75B8C8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/interest_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_interest"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="What's Your Interest ?"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/interest_layout" />
+
+        <Button
+            android:id="@+id/entrepreneur_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_buttons"
+            android:text="Entrepreneur"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_interest" />
+
+        <Button
+            android:id="@+id/investor_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_buttons"
+            android:text="Investor"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/entrepreneur_btn" />
+
+        <TextView
+            android:id="@+id/text_know_more"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:text="Can't Choose ?"
+            android:textSize="15sp"
+            android:textColor="#75B8C8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/investor_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/about_passious"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="About Passious"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

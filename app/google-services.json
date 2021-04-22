@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "546004701715",
+    "project_id": "galaxy-84214",
+    "storage_bucket": "galaxy-84214.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546004701715:android:9140ddd6eb108d83ff25e6",
+        "android_client_info": {
+          "package_name": "com.example.galaxy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546004701715-rqeoemiptsr6qtl3di8soqgsf6kjgn9n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.galaxy",
+            "certificate_hash": "2d2f52a1b572ee9db65d421cf4c797b7aff8d479"
+          }
+        },
+        {
+          "client_id": "546004701715-lk31evfqp143gvtrmgjlaulrh9dkmgu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO0Za4h4LssDxQg9WExG7P8S1gM-Fatus"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546004701715-lk31evfqp143gvtrmgjlaulrh9dkmgu1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+
+    <Button
+        android:id="@+id/profile_setting_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/ic_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/me_profile_img2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_setting_btn" />
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView">
+
+
+        <TextView
+            android:id="@+id/txt_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Abhishek Kumar"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ic_verified"
+            android:layout_toRightOf="@id/txt_user_name"/>
+
+
+        <TextView
+            android:id="@+id/txt_user_passion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_user_name"
+            android:layout_marginLeft="15dp"
+            android:text="Developer • Mobile Developer"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_user_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_user_passion"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:text="I have started a company called passious with My co-founder @HarshitSharma. And it's the future for Entrepreneurs and their startups."
+            android:textColor="#CE000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_user_links"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_user_bio"
+            android:layout_marginLeft="15dp"
+            android:text="www.passious.com"
+            android:textColor="@color/teal_200"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_user_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_user_links"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="New Delhi, India"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
