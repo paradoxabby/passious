@@ -1,4 +1,4 @@
-package com.example.galaxy.testpackge;
+package com.example.galaxy;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,8 +7,6 @@ import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
-import com.example.galaxy.R;
 
 
 public class CircleFragment extends Fragment {
