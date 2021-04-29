@@ -21,7 +21,7 @@
         </activity>
         <activity android:name=".EntrepreneurHome" />
         <activity android:name=".EntrepreneurManageOTP" />
-        <activity android:name=".EntrepreneurNewAccountActivity" />
+        <activity android:name=".register.Step1" />
         <activity android:name=".EntrepreneurRegisterActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -1,4 +1,4 @@
-package com.example.galaxy;
+package com.example.galaxy.register;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,9 +9,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.galaxy.EntrepreneurManageOTP;
+import com.example.galaxy.R;
 import com.hbb20.CountryCodePicker;
 
-public class EntrepreneurNewAccountActivity extends AppCompatActivity {
+public class Step1 extends AppCompatActivity {
 
     CountryCodePicker ccp;
     Button getOTP;
@@ -22,7 +24,7 @@ public class EntrepreneurNewAccountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entrepreneur_new_account);
 
-        phnNumber = (EditText) findViewById(R.id.txt_phone);
+        phnNumber = (EditText) findViewById(R.id.txt_phone_number);
         getOTP = (Button) findViewById(R.id.send_otp_btn);
         ccp=(CountryCodePicker)findViewById(R.id.ccp);
         ccp.registerCarrierNumberEditText(phnNumber);
@@ -37,7 +39,7 @@ public class EntrepreneurNewAccountActivity extends AppCompatActivity {
                 else if(phnNumber.getText().toString().length()!=11)
                     Toast.makeText(getApplicationContext(),"Invalid Phone Number",Toast.LENGTH_LONG).show();
                 else {
-                    Intent intent = new Intent(EntrepreneurNewAccountActivity.this, EntrepreneurManageOTP.class);
+                    Intent intent = new Intent(Step1.this, EntrepreneurManageOTP.class);
                     intent.putExtra("mobile", ccp.getFullNumberWithPlus().replace(" ", ""));
                     startActivity(intent);
                 }

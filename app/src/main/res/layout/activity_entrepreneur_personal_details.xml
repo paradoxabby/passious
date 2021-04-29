@@ -35,34 +35,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/entre_text" />
 
-<!--    <com.google.android.material.textfield.TextInputLayout-->
-<!--        android:id="@+id/txt_fullname"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
-<!--        android:layout_marginTop="45dp"-->
-<!--        app:layout_constraintEnd_toEndOf="@+id/textView2"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/textView2"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/textView2">-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
 
-<!--    <com.google.android.material.textfield.TextInputEditText-->
-<!--        android:layout_width="345dp"-->
-<!--        android:layout_height="55dp"-->
-<!--        android:hint="Full Name"-->
-<!--        android:inputType="text"-->
-<!--        android:padding="15dp" />-->
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="345dp"
+        android:layout_height="55dp"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:padding="15dp" />
 
-<!--    </com.google.android.material.textfield.TextInputLayout>-->
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txt_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_marginTop="55dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_fullname"
+        app:layout_constraintStart_toStartOf="@+id/txt_fullname"
+        app:layout_constraintTop_toBottomOf="@+id/txt_fullname">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="345dp"
@@ -78,7 +78,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="45dp"
         app:layout_constraintEnd_toEndOf="@+id/txt_username"
         app:layout_constraintStart_toStartOf="@+id/txt_username"
         app:layout_constraintTop_toBottomOf="@+id/txt_username"
@@ -95,19 +95,27 @@
 
 
 
-    <Button
-        android:id="@+id/register_btn"
-        android:layout_width="350dp"
-        android:layout_height="55dp"
-        android:background="@drawable/rounded_buttons"
-        android:text="Continue"
-        android:textAllCaps="false"
-        android:layout_marginTop="55dp"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/txt_pass"
-        app:layout_constraintStart_toStartOf="@+id/txt_pass"
-        app:layout_constraintTop_toBottomOf="@+id/txt_pass" />
+    <RelativeLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rounded_buttons"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
