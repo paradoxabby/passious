@@ -85,20 +85,27 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 
-    <Button
+    <RelativeLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        android:id="@+id/register_btn"
-        android:layout_width="350dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/rounded_buttons"
-        android:text="Continue"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/entre_passion_parent_spinner"
-        app:layout_constraintStart_toStartOf="@+id/entre_passion_parent_spinner"
-        app:layout_constraintTop_toBottomOf="@id/entre_other_passion" />
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rounded_buttons"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

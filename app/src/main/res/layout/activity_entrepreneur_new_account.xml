@@ -22,16 +22,45 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/entre_text"
+        app:layout_constraintBottom_toTopOf="@id/textView3">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_below="@id/tab_layout">
+
+
+        </androidx.viewpager2.widget.ViewPager2>
+
+    </RelativeLayout>
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="New User Registration"
-        android:textSize="20sp"
+        android:text="Existing User ? Log In"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_layout"
+        android:layout_marginBottom="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/entre_text" />
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
 
     <RelativeLayout
         android:id="@+id/btn_layout"
@@ -52,51 +81,6 @@
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="20sp" />
-
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Existing User ? Log In"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_layout"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-    </TextView>
-
-    <RelativeLayout
-        android:id="@+id/phone_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:padding="40dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
-
-        <com.hbb20.CountryCodePicker
-            android:id="@+id/ccp"
-            android:layout_width="115dp"
-            android:layout_height="43dp"
-            android:layout_centerVertical="true" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txt_phone_number"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="200dp"
-                android:layout_height="55dp"
-                android:hint="Phone"
-                android:inputType="number" />
-
-        </com.google.android.material.textfield.TextInputLayout>
 
     </RelativeLayout>
 

@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.galaxy.register.Step1;
+
 public class EntrepreneurRegisterActivity extends AppCompatActivity {
 
     private ViewPager mSlideViewPager;
@@ -31,7 +33,7 @@ public class EntrepreneurRegisterActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (EntrepreneurRegisterActivity.this, EntrepreneurPersonalDetailsActivity.class);
+                Intent intent = new Intent (EntrepreneurRegisterActivity.this, Step1.class);
                 startActivity(intent);
             }
         });

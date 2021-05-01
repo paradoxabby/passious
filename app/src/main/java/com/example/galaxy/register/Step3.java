@@ -1,4 +1,4 @@
-package com.example.galaxy;
+package com.example.galaxy.register;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class EntrepreneurPersonalDetailsActivity extends AppCompatActivity {
+import com.example.galaxy.EntrePersonalDetailsStep2Activity;
+import com.example.galaxy.R;
+
+public class Step3 extends AppCompatActivity {
 
     Button regBtn;
 
@@ -21,9 +24,10 @@ public class EntrepreneurPersonalDetailsActivity extends AppCompatActivity {
         regBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (EntrepreneurPersonalDetailsActivity.this, EntrePersonalDetailsStep2Activity.class);
+                Intent intent = new Intent (Step3.this, EntrePersonalDetailsStep2Activity.class);
                 startActivity(intent);
             }
         });
+
     }
 }

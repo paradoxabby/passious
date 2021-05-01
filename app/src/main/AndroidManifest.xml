@@ -16,12 +16,13 @@
         <activity android:name=".EntreHomeActivity" />
         <activity android:name=".EntrePersonalDetailsStep3Activity" />
         <activity android:name=".EntrePersonalDetailsStep2Activity" />
-        <activity android:name=".EntrepreneurPersonalDetailsActivity">
-            z
+        <activity android:name=".register.Step3">
+
         </activity>
         <activity android:name=".EntrepreneurHome" />
-        <activity android:name=".EntrepreneurManageOTP" />
-        <activity android:name=".register.Step1" />
+        <activity android:name=".register.Step2" />
+        <activity android:name=".register.Step1"
+            android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".EntrepreneurRegisterActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
