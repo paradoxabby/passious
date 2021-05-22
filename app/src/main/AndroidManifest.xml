@@ -11,18 +11,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Galaxy">
-        <activity android:name=".EntrepreneurProfileSetting"></activity>
+        <activity android:name=".register.Step6"></activity>
+        <activity
+            android:name=".register.Step5"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".register.Step4"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".EntrepreneurProfileSetting" />
         <activity android:name=".NewStartupActivity1" />
         <activity android:name=".EntreHomeActivity" />
         <activity android:name=".EntrePersonalDetailsStep3Activity" />
         <activity android:name=".EntrePersonalDetailsStep2Activity" />
-        <activity android:name=".register.Step3">
-
-        </activity>
+        <activity
+            android:name=".register.Step3"
+            android:windowSoftInputMode="adjustPan" />
         <activity android:name=".EntrepreneurHome" />
-        <activity android:name=".register.Step2" />
-        <activity android:name=".register.Step1"
-            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".register.Step2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".register.Step1"
+            android:windowSoftInputMode="adjustPan" />
         <activity android:name=".EntrepreneurRegisterActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

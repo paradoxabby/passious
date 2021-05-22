@@ -24,7 +24,7 @@ public class Step3 extends AppCompatActivity {
         regBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (Step3.this, EntrePersonalDetailsStep2Activity.class);
+                Intent intent = new Intent (Step3.this, Step4.class);
                 startActivity(intent);
             }
         });
