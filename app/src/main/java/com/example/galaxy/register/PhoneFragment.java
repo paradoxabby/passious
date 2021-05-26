@@ -26,6 +26,9 @@ public class PhoneFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_phone, container, false);
 
+
+        //test commit check by praveen
+
 //        phnNumber = (EditText) v.findViewById(R.id.txt_phone_number);
 //        getOTP = (Button) v.findViewById(R.id.send_otp_btn);
 //        ccp=(CountryCodePicker) v.findViewById(R.id.ccp);
